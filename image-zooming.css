@@ -1,0 +1,9 @@
+input[type="checkbox"][name="zoom-check"] { display: none; }
+.container img {
+  cursor: zoom-in;
+  margin: 50px;
+}
+input[type="checkbox"][name="zoom-check"]:checked ~ label > img {
+  transform: scale(1.5);
+  cursor: zoom-out;
+}
